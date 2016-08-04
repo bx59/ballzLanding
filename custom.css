@@ -23,7 +23,7 @@ svg .triangle.white.top{
 }
 svg .triangle.white.bottom{
   animation: bottomfiller 3s linear forwards;
-  animation-delay: 2.4s;
+  animation-delay: 2.41s;
 }
 
 @keyframes strokered {
