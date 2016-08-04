@@ -38,5 +38,3 @@ svg .triangle.white.bottom{
   99% {fill: #ffffff; stroke-width:1;}
   100% { transform: rotate(28deg); transform-origin: bottom left; fill:transparent; stroke-width:0;}
 }
-  100% { transform: rotate(50deg); transform-origin: bottom left; fill:transparent; stroke-width:0;}
-}
