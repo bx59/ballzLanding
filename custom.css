@@ -1,7 +1,4 @@
-body{ background: #fff; }
 #ballz-intro-logo{ width: 100%; height: auto; }
-
-
 .intro { font-size: 1.250em; font-style: italic; margin: 0; }
 
 svg { width: 25em; display: block; fill: transparent; margin-top: 2em; margin-left: auto; margin-right: auto;
