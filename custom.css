@@ -1,30 +1,14 @@
 #ballz-intro-logo{ width: 100%; height: auto; }
 .intro { font-size: 1.250em; font-style: italic; margin: 0; }
 
-svg { width: 25em; display: block; fill: transparent; margin-top: 2em; margin-left: auto; margin-right: auto;
-  animation: zoomOutDown 0.3s ease-in-out forwards;
-  animation-delay: 1.5s;
-
-}
-
-svg .red{
-  fill:#E61717; stroke:#E61717; stroke-width:1; stroke-dasharray:745; stroke-dashoffset:745;
-}
-svg .triangle.red{
-  fill: #E61717; stroke: #ffffff; stroke-width:1;
-  animation: strokered 3s linear forwards;
-}
+svg { display: block; fill: transparent; margin-left: auto; margin-right: auto; animation: zoomOutDown 0.3s ease-in-out forwards; animation-delay: 1.2s;}
+svg .red{ fill:#E61717; stroke:#E61717; stroke-width:1; stroke-dasharray:745; stroke-dashoffset:745; }
+svg .triangle.red{ fill: #E61717; stroke: #ffffff; stroke-width:1; animation: strokered .3s linear forwards;}
 svg .triangle.white{ fill: #ffffff; stroke:#ffffff; stroke-width:2; }
+svg .triangle.white.top{ animation: topfiller .3s linear forwards;}
+svg .triangle.white.bottom{ animation: bottomfiller .3s linear forwards; animation-delay: .241s; }
 
-svg .triangle.white.top{
-  animation: topfiller 0.3s linear forwards;
-  /*animation-delay: 2s;*/
-}
-svg .triangle.white.bottom{
-  animation: bottomfiller 0.3s linear forwards;
-  animation-delay: 0.241s;
-}
-
+/* Z animation start */
 @keyframes strokered {
   0%   { fill:#ffffff; }
   1%   { fill:#E61717; }
@@ -40,37 +24,15 @@ svg .triangle.white.bottom{
   99% {fill: #ffffff; stroke-width:1;}
   100% { transform: rotate(34deg); transform-origin: bottom left; fill:transparent; stroke-width:0;}
 }
+/* Z animation end */
+
+/* icon to line animation start */
 @keyframes zoomOutDown {
-  20% {
-    transform: scale3d(.478, .478, .478) translate3d(0, -60px, 0);
-  }
-  30% {
-    transform: scale3d(.0472, .0472, .0472) translate3d(0, 0, 0);
-    transform: scale3d(.0430, .0430, .0430) translate3d(0, 0, 0);
-
-    background: transparent;
-  }
-  45% {
-    transform: scale3d(.0460, .0460, .0460) translate3d(0, 0, 0);
-    transform: scale3d(.0430, .0430, .0430) translate3d(0, 0, 0);
-    background: transparent;
-  }
-  49% {
-    transform: scale3d(.0450, .0450, .0450) translate3d(0, 0, 0);
-    transform: scale3d(.0430, .0430, .0430) translate3d(0, 0, 0);
-
-    background: transparent;
-  }
-  50%{
-    transform: scale3d(.0430, .0430, .0430) translate3d(0, 0, 0);
-    background:#E61717;
-  }
-  100%{
-    transform: scale3d(0.8, .04, .04) translate3d(0, 0, 0);
-    background:#E61717;
-  }
+  20% { transform: scale3d(.478, .478, .478) translate3d(0, -60px, 0);}
+  30% { transform: scale3d(.0472, .0472, .0472) translate3d(0, 0, 0); background: transparent; }
+  45% { transform: scale3d(.0460, .0460, .0460) translate3d(0, 0, 0); background: transparent; }
+  49% { transform: scale3d(.0450, .0450, .0450) translate3d(0, 0, 0); background: transparent; }
+  50%{ transform: scale3d(.0430, .0430, .0430) translate3d(0, 0, 0); background:#E61717; }
+  100%{ transform: scale3d(0.8, .04, .04) translate3d(0, 0, 0); background:#E61717; }
 }
-
-.zoomOutDown {
-  animation-name: zoomOutDown;
-}
+/* icon to line animation end */
