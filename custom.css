@@ -3,23 +3,23 @@
 
 svg { display: block; fill: transparent; margin-left: auto; margin-right: auto; animation: zoomOutDown 0.3s ease-in-out forwards; animation-delay: 1.2s;}
 svg .red{ fill:#E61717; stroke:#E61717; stroke-width:1; stroke-dasharray:745; stroke-dashoffset:745; }
-svg .triangle.red{ fill: #E61717; stroke: #ffffff; stroke-width:1; animation: strokered .3s linear forwards;}
+svg .triangle.red{ fill: #E61717; stroke: #ffffff; stroke-width:1; animation: strokeRed .3s linear forwards;}
 svg .triangle.white{ fill: #ffffff; stroke:#ffffff; stroke-width:2; }
-svg .triangle.white.top{ animation: topfiller .3s linear forwards;}
-svg .triangle.white.bottom{ animation: bottomfiller .3s linear forwards; animation-delay: .241s; }
+svg .triangle.white.top{ animation: topFiller .3s linear forwards;}
+svg .triangle.white.bottom{ animation: bottomFiller .3s linear forwards; animation-delay: .241s; }
 
 /* Z animation start */
-@keyframes strokered {
+@keyframes strokeRed {
   0%   { fill:#ffffff; }
   1%   { fill:#E61717; }
   100% { fill:#E61717;}
 }
-@keyframes topfiller {
+@keyframes topFiller {
   0%   { transform: rotate(0deg); transform-origin: top right; fill: #ffffff; stroke-width:1;}
   99% {fill: #ffffff; stroke-width:1;}
   100% { transform: rotate(-55deg); transform-origin: top right; fill: transparent; stroke-width:0;}
 }
-@keyframes bottomfiller {
+@keyframes bottomFiller {
   0%   { transform: rotate(0deg); transform-origin: bottom left; fill: #ffffff; stroke-width:1;}
   99% {fill: #ffffff; stroke-width:1;}
   100% { transform: rotate(34deg); transform-origin: bottom left; fill:transparent; stroke-width:0;}
@@ -36,3 +36,16 @@ svg .triangle.white.bottom{ animation: bottomfiller .3s linear forwards; animati
   100%{ transform: scale3d(0.8, .04, .04) translate3d(0, 0, 0); background:#E61717; }
 }
 /* icon to line animation end */
+
+
+
+
+.motto{position: absolute;text-align: center;left: 50%;}
+.motto.top{top: 50%;margin-top: -153px;margin-left: -402.365px; opacity: 0; animation: mottoFlipX .3s linear forwards; animation-delay: 2s;}
+.motto.bottom{bottom: 50%;margin-bottom: -153px;margin-left: -400.205px; opacity: 0; animation: mottoFlipX .3s linear forwards; animation-delay: 2.5s;}
+.motto h3{color: black;font-size: 120px; margin:0;}
+
+@keyframes mottoFlipX {
+  0% {  }
+  100% { }
+}
