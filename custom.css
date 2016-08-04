@@ -33,23 +33,29 @@ svg .triangle.white.bottom{ animation: bottomFiller .3s linear forwards; animati
   45% { transform: scale3d(.0460, .0460, .0460) translate3d(0, 0, 0); background: transparent; }
   49% { transform: scale3d(.0450, .0450, .0450) translate3d(0, 0, 0); background: transparent; }
   50%{ transform: scale3d(.0430, .0430, .0430) translate3d(0, 0, 0); background:#E61717; }
-  100%{ transform: scale3d(0.8, .04, .04) translate3d(0, 0, 0); background:#E61717; }
+  100%{ transform: scale3d(0.8, .02, .02) translate3d(0, 0, 0); background:#E61717; }
 }
 /* logo to line animation end */
 
 
 
 .motto{position: absolute;text-align: center;left: 50%;}
-.motto.top{top: 50%;margin-top: -153px;margin-left: -402.365px; opacity: 0; animation: mottoFlipX .3s linear forwards; animation-delay: 2s; backface-visibility: visible !important;}
-.motto.bottom{bottom: 50%;margin-bottom: -153px;margin-left: -400.205px; opacity: 0; animation: mottoFlipX .3s linear forwards; animation-delay: 2.5s; backface-visibility: visible !important;}
 .motto h3{color: black;font-size: 120px; margin:0;}
 
-/* motto flip animation start */
-@keyframes mottoFlipX {
-  0% { opacity: 0; transform: perspective(400px) rotate3d(1, 0, 0, 90deg); animation-timing-function: ease-in; }
-  40% { opacity: 1; transform: perspective(400px) rotate3d(1, 0, 0, -20deg); animation-timing-function: ease-in; }
-  60% { opacity: 1; transform: perspective(400px) rotate3d(1, 0, 0, 10deg); }
-  80% { opacity: 1; transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
-  100% { opacity: 1; transform: perspective(400px); }
+.motto.top{top: 50%;margin-top: -153px;margin-left: -402.365px;}
+.motto.top h3{opacity: 0; animation: mottoMoveUp .3s linear forwards; animation-delay: 2s;}
+.motto.bottom{bottom: 50%;margin-bottom: -153px;margin-left: -400.205px;}
+.motto.bottom h3{opacity: 0; animation: mottoMoveDown .3s linear forwards; animation-delay: 2.5s;}
+
+/* motto up and down flip animation start */
+@keyframes mottoMoveUp {
+  0% { opacity: 0; transform: scale3d(1, 0, 1) translate3d(0, 323px, 0);}
+  80% { opacity: 0; }
+  100% { opacity: 1; transform: scale3d(1, 1, 1) translate3d(0, 0, 0);}
+}
+@keyframes mottoMoveDown {
+  0% { opacity: 0; transform: scale3d(1, 0, 1) translate3d(0, -323px, 0);}
+  80% { opacity: 0; }
+  100% { opacity: 1; transform: scale3d(1, 1, 1) translate3d(0, 0, 0);}
 }
 /* motto flip animation end */
