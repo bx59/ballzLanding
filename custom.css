@@ -7,28 +7,23 @@ body{ background: #fff; }
 svg { width: 25em; display: block; fill: transparent; margin-top: 2em; margin-left: auto; margin-right: auto;
   /*stroke: #000;stroke-width: 0;stroke-dasharray: 745;animation: stroke 5s linear forwards;*/
 }
-<<<<<<< Updated upstream
-svg .red{ fill: #ffffff; stroke: #ffffff; stroke-width:1; }
-svg .white{ fill: #ffffff; stroke:#ffffff; stroke-width:1; }
-=======
-svg .red{ fill: #E61717; stroke: #ffffff; stroke-width:1; }
-svg .white{ fill: #ffffff; stroke:#ffffff; stroke-width:2; }
->>>>>>> Stashed changes
 
 svg .red{
+  fill: #E61717; stroke: #ffffff; stroke-width:1;
   animation: strokered 3s linear forwards;
-  /*animation-delay: 2s;*/
 }
+svg .white{ fill: #ffffff; stroke:#ffffff; stroke-width:2; }
+
 svg .triangle.white.top{
   animation: topfiller 3s linear forwards;
   /*animation-delay: 2s;*/
 }
 svg .triangle.white.bottom{
   animation: bottomfiller 3s linear forwards;
-  animation-delay: 2.7s;
+  animation-delay: 2.6s;
 }
 
-@keyframes strokered {
+/*@keyframes strokered {
   0%   { fill:#ffffff; }
   1%   { fill:#E61717; }
   100% { fill:#E61717;}
@@ -43,3 +38,5 @@ svg .triangle.white.bottom{
   99% {fill: #ffffff; stroke-width:1;}
   100% { transform: rotate(28deg); transform-origin: bottom left; fill:transparent; stroke-width:0;}
 }
+  100% { transform: rotate(50deg); transform-origin: bottom left; fill:transparent; stroke-width:0;}
+}*/
