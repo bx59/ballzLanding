@@ -23,7 +23,7 @@ svg .triangle.white.bottom{
   animation-delay: 2.6s;
 }
 
-/*@keyframes strokered {
+@keyframes strokered {
   0%   { fill:#ffffff; }
   1%   { fill:#E61717; }
   100% { fill:#E61717;}
@@ -39,4 +39,4 @@ svg .triangle.white.bottom{
   100% { transform: rotate(28deg); transform-origin: bottom left; fill:transparent; stroke-width:0;}
 }
   100% { transform: rotate(50deg); transform-origin: bottom left; fill:transparent; stroke-width:0;}
-}*/
+}
