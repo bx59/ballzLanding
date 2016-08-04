@@ -49,13 +49,13 @@ svg .triangle.white.bottom{ animation: bottomFiller .3s linear forwards; animati
 
 /* motto up and down flip animation start */
 @keyframes mottoMoveUp {
-  0% { opacity: 0; transform: scale3d(1, 0, 1) translate3d(0, 323px, 0);}
+  0% { opacity: 0; transform:translate3d(0, 323px, 0);}
   80% { opacity: 0; }
-  100% { opacity: 1; transform: scale3d(1, 1, 1) translate3d(0, 0, 0);}
+  100% { opacity: 1; transform: translate3d(0, 0, 0);}
 }
 @keyframes mottoMoveDown {
-  0% { opacity: 0; transform: scale3d(1, 0, 1) translate3d(0, -323px, 0);}
+  0% { opacity: 0; transform: translate3d(0, -323px, 0);}
   80% { opacity: 0; }
-  100% { opacity: 1; transform: scale3d(1, 1, 1) translate3d(0, 0, 0);}
+  100% { opacity: 1; transform: translate3d(0, 0, 0);}
 }
 /* motto flip animation end */
