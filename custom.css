@@ -1,3 +1,6 @@
+@font-face { font-family: UniSansHeavy; src: url('assets/font/uni-sans/UniSansHeavy.otf');}
+body { font-family: UniSansHeavy, sans-serif; }
+
 #ballz-intro-logo{ width: 100%; height: auto; }
 .intro { font-size: 1.250em; font-style: italic; margin: 0; }
 
