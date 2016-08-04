@@ -26,7 +26,7 @@ svg .triangle.white.bottom{ animation: bottomFiller .3s linear forwards; animati
 }
 /* Z animation end */
 
-/* icon to line animation start */
+/* logo to line animation start */
 @keyframes zoomOutDown {
   20% { transform: scale3d(.478, .478, .478) translate3d(0, -60px, 0);}
   30% { transform: scale3d(.0472, .0472, .0472) translate3d(0, 0, 0); background: transparent; }
@@ -35,7 +35,7 @@ svg .triangle.white.bottom{ animation: bottomFiller .3s linear forwards; animati
   50%{ transform: scale3d(.0430, .0430, .0430) translate3d(0, 0, 0); background:#E61717; }
   100%{ transform: scale3d(0.8, .04, .04) translate3d(0, 0, 0); background:#E61717; }
 }
-/* icon to line animation end */
+/* logo to line animation end */
 
 
 
@@ -44,28 +44,12 @@ svg .triangle.white.bottom{ animation: bottomFiller .3s linear forwards; animati
 .motto.bottom{bottom: 50%;margin-bottom: -153px;margin-left: -400.205px; opacity: 0; animation: mottoFlipX .3s linear forwards; animation-delay: 2.5s; backface-visibility: visible !important;}
 .motto h3{color: black;font-size: 120px; margin:0;}
 
+/* motto flip animation start */
 @keyframes mottoFlipX {
-  from {
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  40% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    animation-timing-function: ease-in;
-  }
-
-  60% {
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    opacity: 1;
-  }
-
-  80% {
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); opacity: 1;
-  }
-
-  to {
-    transform: perspective(400px); opacity: 1;
-  }
+  0% { opacity: 0; transform: perspective(400px) rotate3d(1, 0, 0, 90deg); animation-timing-function: ease-in; }
+  40% { opacity: 1; transform: perspective(400px) rotate3d(1, 0, 0, -20deg); animation-timing-function: ease-in; }
+  60% { opacity: 1; transform: perspective(400px) rotate3d(1, 0, 0, 10deg); }
+  80% { opacity: 1; transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
+  100% { opacity: 1; transform: perspective(400px); }
 }
+/* motto flip animation end */
