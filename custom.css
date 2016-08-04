@@ -18,12 +18,12 @@ svg .triangle.red{
 svg .triangle.white{ fill: #ffffff; stroke:#ffffff; stroke-width:2; }
 
 svg .triangle.white.top{
-  animation: topfiller 3s linear forwards;
+  animation: topfiller 0.3s linear forwards;
   /*animation-delay: 2s;*/
 }
 svg .triangle.white.bottom{
-  animation: bottomfiller 3s linear forwards;
-  animation-delay: 2.41s;
+  animation: bottomfiller 0.3s linear forwards;
+  animation-delay: 0.241s;
 }
 
 @keyframes strokered {
