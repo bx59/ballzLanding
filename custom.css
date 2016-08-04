@@ -44,7 +44,7 @@ svg .triangle.white.bottom{ animation: bottomFiller .3s linear forwards; animati
 
 .motto.top{top: 50%;margin-top: -153px;margin-left: -402.365px;}
 .motto.top h3{opacity: 0; animation: mottoMoveUp .3s linear forwards; animation-delay: 2s;}
-.motto.bottom{bottom: 50%;margin-bottom: -153px;margin-left: -400.205px;}
+.motto.bottom{bottom: 50%;margin-bottom: -153px;margin-left: -383.525px;}
 .motto.bottom h3{opacity: 0; animation: mottoMoveDown .3s linear forwards; animation-delay: 2.5s;}
 
 /* motto up and down flip animation start */
