@@ -6,6 +6,8 @@ body{ background: #fff; }
 
 svg { width: 25em; display: block; fill: transparent; margin-top: 2em; margin-left: auto; margin-right: auto;
   /*stroke: #000;stroke-width: 0;stroke-dasharray: 745;animation: stroke 5s linear forwards;*/
+  animation: zoomOutDown 0.3s linear forwards;
+  animation-delay: 1.5s;
 }
 
 svg .red{
@@ -40,4 +42,24 @@ svg .triangle.white.bottom{
   0%   { transform: rotate(0deg); transform-origin: bottom left; fill: #ffffff; stroke-width:1;}
   99% {fill: #ffffff; stroke-width:1;}
   100% { transform: rotate(34deg); transform-origin: bottom left; fill:transparent; stroke-width:0;}
+}
+@keyframes zoomOutDown {
+  40% {
+    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  }
+  99% {
+    transform: scale3d(.08, .08, .08) translate3d(0, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    background: transparent;
+  }
+  100%{
+    transform: scale3d(.08, .08, .08) translate3d(0, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    background:#E61717;
+  }
+}
+
+.zoomOutDown {
+  animation-name: zoomOutDown;
 }
