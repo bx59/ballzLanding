@@ -31,10 +31,10 @@ svg .triangle.white.bottom{
 @keyframes topfiller {
   0%   { transform: rotate(0deg); transform-origin: top right; fill: #ffffff; stroke-width:1;}
   99% {fill: #ffffff; stroke-width:1;}
-  100% { transform: rotate(-50deg); transform-origin: top right; fill: transparent; stroke-width:0;}
+  100% { transform: rotate(-55deg); transform-origin: top right; fill: transparent; stroke-width:0;}
 }
 @keyframes bottomfiller {
   0%   { transform: rotate(0deg); transform-origin: bottom left; fill: #ffffff; stroke-width:1;}
   99% {fill: #ffffff; stroke-width:1;}
-  100% { transform: rotate(28deg); transform-origin: bottom left; fill:transparent; stroke-width:0;}
+  100% { transform: rotate(29deg); transform-origin: bottom left; fill:transparent; stroke-width:0;}
 }
