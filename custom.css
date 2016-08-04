@@ -3,8 +3,9 @@
 
 svg { width: 25em; display: block; fill: transparent; margin-top: 2em; margin-left: auto; margin-right: auto;
   /*stroke: #000;stroke-width: 0;stroke-dasharray: 745;animation: stroke 5s linear forwards;*/
-  animation: zoomOutDown 0.3s linear forwards;
+  animation: zoomOutDown 0.3s ease-in-out forwards;
   animation-delay: 1.5s;
+
 }
 
 svg .red{
@@ -52,12 +53,12 @@ svg .triangle.white.bottom{
   }
   50%{
     transform: scale3d(.04, .04, .04) translate3d(0, 0, 0);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    /*animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);*/
     background:#E61717;
   }
   100%{
     transform: scale3d(2, .04, .04) translate3d(0, 0, 0);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    /*animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);*/
     background:#E61717;
   }
 }
