@@ -16,12 +16,12 @@ svg .triangle.white.top{
 }
 svg .triangle.white.bottom{
   animation: bottomfiller 5s linear forwards;
-  animation-delay: 3s;
+  animation-delay: 5s;
 }
 
 @keyframes topfiller {
   0%   { transform: rotate(0deg); transform-origin: top right; }
-  100% { transform: rotate(60deg); transform-origin: top right;}
+  100% { transform: rotate(-50deg); transform-origin: top right;}
 }
 @keyframes bottomfiller {
   0%   { transform: rotate(0deg); transform-origin: bottom left; }
