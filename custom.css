@@ -233,10 +233,12 @@ svg .triangle.white.bottom{
     100%{ transform: scale3d(.85, .02, .02) translate3d(0, 0, 0); background:#E61717; }
   }
 
-  .motto h3 {font-size:9vmax;}
-  .motto.top, .motto.bottom {margin-left:-26.5vmax;}
+  .motto h3 { font-size: 9vmax; }
+  .motto.top { margin-left: -26.5vmax; margin-top: -7.8vmax; }
+  .motto.bottom { margin-left: -26.5vmax; margin-bottom: -9.3vmax }
 }
 @media (max-width:480px) {
-  .motto h3 {font-size:6vmax;}
-  .motto.top, .motto.bottom {margin-left:-15.5vmax;}
+  .motto h3 { font-size:6vmax; }
+  .motto.top { margin-left:-17.5vmax; margin-top: -6vmax;  }
+  .motto.bottom { margin-left:-17.5vmax; margin-bottom: -7.5vmax;  }
 }
