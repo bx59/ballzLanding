@@ -6,53 +6,53 @@ body { font-family: UniSansHeavy, sans-serif; }
 
 svg {
   display: block; fill: transparent; margin-left: auto; margin-right: auto;
-  -webkit-animation: zoomOutDown 0.3s ease-in-out 1.2s forwards; ;
-  -moz-animation: zoomOutDown 0.3s ease-in-out 1.2s forwards; ;
-  -o-animation: zoomOutDown 0.3s ease-in-out 1.2s forwards; ;
-  animation: zoomOutDown 0.3s ease-in-out 1.2s forwards; ;
+  -webkit-animation: zoomOutDown 0.3s ease-in-out 2.5s forwards; ;
+  -moz-animation: zoomOutDown 0.3s ease-in-out 2.5s forwards; ;
+  -o-animation: zoomOutDown 0.3s ease-in-out 2.5s forwards; ;
+  animation: zoomOutDown 0.3s ease-in-out 2.5s forwards; ;
 }
 svg .red{ fill:#E61717; stroke:#E61717; stroke-width:1; stroke-dasharray:745; stroke-dashoffset:745; }
 svg .triangle.red{
-  fill: #E61717; stroke: #ffffff; stroke-width:1;
-  -webkit-animation: strokeRed .3s linear forwards;
-  -moz-animation: strokeRed .3s linear forwards;
-  -o-animation: strokeRed .3s linear forwards;
-  animation: strokeRed .3s linear forwards;
+  fill: #ffffff; stroke: #ffffff; stroke-width:1;
+  -webkit-animation: strokeRed .3s linear 0.5s forwards;
+  -moz-animation: strokeRed .3s linear 0.5s forwards;
+  -o-animation: strokeRed .3s linear 0.5s forwards;
+  animation: strokeRed .3s linear 0.5s forwards;
 }
 svg .triangle.white{ fill: #ffffff; stroke:#ffffff; stroke-width:2; }
 svg .triangle.white.top{
-  -webkit-animation: topFiller .3s linear forwards;
-  -moz-animation: topFiller .3s linear forwards;
-  -o-animation: topFiller .3s linear forwards;
-  animation: topFiller .3s linear forwards;
+  -webkit-animation: topFiller .2s linear 0.5s forwards;
+  -moz-animation: topFiller .2s linear 0.5s forwards;
+  -o-animation: topFiller .2s linear 0.5s forwards;
+  animation: topFiller .2s linear 0.5s forwards;
 }
 svg .triangle.white.bottom{
-  -webkit-animation: bottomFiller .3s linear .241s forwards;
-  -moz-animation: bottomFiller .3s linear .241s forwards;
-  -o-animation: bottomFiller .3s linear .241s forwards;
-  animation: bottomFiller .3s linear .241s forwards;
+  -webkit-animation: bottomFiller .2s linear 0.631s forwards;
+  -moz-animation: bottomFiller .2s linear 0.631s forwards;
+  -o-animation: bottomFiller .2s linear 0.631s forwards;
+  animation: bottomFiller .2s linear 0.631s forwards;
 }
 
 /* Z animation start */
 @-webkit-keyframes strokeRed {
   0%   { fill:#ffffff; }
   1%   { fill:#E61717; }
-  100% { fill:#E61717;}
+  100% { fill:#E61717; stroke:#E61717; }
 }
 @-moz-keyframes strokeRed {
   0%   { fill:#ffffff; }
   1%   { fill:#E61717; }
-  100% { fill:#E61717;}
+  100% { fill:#E61717; stroke:#E61717; }
 }
 @-o-keyframes strokeRed {
   0%   { fill:#ffffff; }
   1%   { fill:#E61717; }
-  100% { fill:#E61717;}
+  100% { fill:#E61717; stroke:#E61717; }
 }
 @keyframes strokeRed {
   0%   { fill:#ffffff; }
   1%   { fill:#E61717; }
-  100% { fill:#E61717;}
+  100% { fill:#E61717; stroke:#E61717; }
 }
 
 @-webkit-keyframes topFiller {
@@ -141,18 +141,18 @@ svg .triangle.white.bottom{
 .motto.top { top: 50%; margin-top: -8vmax; margin-left: -35.6vmax; }
 .motto.top h3 {
   opacity: 0;
-  -webkit-animation: mottoMoveUp .3s linear 2s forwards;
-  -moz-animation: mottoMoveUp .3s linear 2s forwards;
-  -o-animation: mottoMoveUp .3s linear 2s forwards;
-  animation: mottoMoveUp .3s linear 2s forwards;
+  -webkit-animation: mottoMoveUp .3s linear 3s forwards;
+  -moz-animation: mottoMoveUp .3s linear 3s forwards;
+  -o-animation: mottoMoveUp .3s linear 3s forwards;
+  animation: mottoMoveUp .3s linear 3s forwards;
 }
 .motto.bottom { bottom: 50%; margin-bottom:-10.3vmax; margin-left:-35.1vmax; }
 .motto.bottom h3 {
   opacity: 0;
-  -webkit-animation: mottoMoveDown .3s linear 2.5s forwards;
-  -moz-animation: mottoMoveDown .3s linear 2.5s forwards;
-  -o-animation: mottoMoveDown .3s linear 2.5s forwards;
-  animation: mottoMoveDown .3s linear 2.5s forwards;
+  -webkit-animation: mottoMoveDown .3s linear 3.5s forwards;
+  -moz-animation: mottoMoveDown .3s linear 3.5s forwards;
+  -o-animation: mottoMoveDown .3s linear 3.5s forwards;
+  animation: mottoMoveDown .3s linear 3.5s forwards;
 }
 
 /* motto up and down flip animation start */
