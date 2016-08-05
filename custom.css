@@ -206,5 +206,5 @@ svg .triangle.white.bottom{
 }
 @media (max-width:480px) {
   .motto h3 {font-size:6vmax;}
-  .motto.top, .motto.bottom {margin-left:17.5vmax;}
+  .motto.top, .motto.bottom {margin-left:-17.5vmax;}
 }
