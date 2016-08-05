@@ -202,9 +202,9 @@ svg .triangle.white.bottom{
 
 @media  (max-width:767px){
   .motto h3 {font-size:9vmax;}
-  .motto {margin-left:-28.5vmax;}
+  .motto.top, .motto.bottom {margin-left:-28.5vmax;}
 }
 @media (max-width:480px) {
   .motto h3 {font-size:6vmax;}
-  .motto {margin-left:17.5vmax;}
+  .motto.top, .motto.bottom {margin-left:17.5vmax;}
 }
