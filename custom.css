@@ -6,10 +6,10 @@ body { font-family: UniSansHeavy, sans-serif; }
 
 svg {
   display: block; fill: transparent; margin-left: auto; margin-right: auto;
-  -webkit-animation: zoomOutDown 0.3s ease-in-out 2.5s forwards; ;
-  -moz-animation: zoomOutDown 0.3s ease-in-out 2.5s forwards; ;
-  -o-animation: zoomOutDown 0.3s ease-in-out 2.5s forwards; ;
-  animation: zoomOutDown 0.3s ease-in-out 2.5s forwards; ;
+  -webkit-animation: zoomOutDown 0.3s ease-in-out 1.5s forwards; ;
+  -moz-animation: zoomOutDown 0.3s ease-in-out 1.5s forwards; ;
+  -o-animation: zoomOutDown 0.3s ease-in-out 1.5s forwards; ;
+  animation: zoomOutDown 0.3s ease-in-out 1.5s forwards; ;
 }
 svg .red{ fill:#E61717; stroke:#E61717; stroke-width:1; stroke-dasharray:745; stroke-dashoffset:745; }
 svg .triangle.red{
@@ -143,10 +143,10 @@ svg .triangle.white.bottom{
   margin-top: -16vmax;
   margin-left: -35.6vmax;
   opacity: 0;
-  -webkit-animation: mottoMoveUp .3s linear 3s forwards;
-  -moz-animation: mottoMoveUp .3s linear 3s forwards;
-  -o-animation: mottoMoveUp .3s linear 3s forwards;
-  animation: mottoMoveUp .3s linear 3s forwards;
+  -webkit-animation: mottoMoveUp .3s linear 2s forwards;
+  -moz-animation: mottoMoveUp .3s linear 2s forwards;
+  -o-animation: mottoMoveUp .3s linear 2s forwards;
+  animation: mottoMoveUp .3s linear 2s forwards;
   height: inherit;
   width: inherit;
 }
@@ -155,10 +155,10 @@ svg .triangle.white.bottom{
   margin-bottom: -18.3vmax;
   margin-left:-35.1vmax;
   opacity: 0;
-  -webkit-animation: mottoMoveDown .3s linear 3.5s forwards;
-  -moz-animation: mottoMoveDown .3s linear 3.5s forwards;
-  -o-animation: mottoMoveDown .3s linear 3.5s forwards;
-  animation: mottoMoveDown .3s linear 3.5s forwards;
+  -webkit-animation: mottoMoveDown .3s linear 2.5s forwards;
+  -moz-animation: mottoMoveDown .3s linear 2.5s forwards;
+  -o-animation: mottoMoveDown .3s linear 2.5s forwards;
+  animation: mottoMoveDown .3s linear 2.5s forwards;
 }
 
 /* motto up and down flip animation start */
@@ -243,10 +243,10 @@ svg .triangle.white.bottom{
     clip: rect(0px, 0px, 0px, 0px);
 }
 .motto.top .content h3:after{
-  animation: glitchRed 2s infinite 3s linear alternate-reverse;
+  animation: glitchRed 2s infinite 2s linear alternate-reverse;
 }
 .motto.bottom .content h3:after{
-  animation: glitchRed 2s infinite 5s linear alternate-reverse;
+  animation: glitchRed 2s infinite 4s linear alternate-reverse;
 }
 
 
@@ -317,10 +317,10 @@ svg .triangle.white.bottom{
   clip: rect(0px, 0px, 0px, 0px);
 }
 .motto.top .content h3:before{
-  animation: glitchBlue 2s infinite 3s linear alternate-reverse;
+  animation: glitchBlue 2s infinite 2s linear alternate-reverse;
 }
 .motto.bottom .content h3:before{
-  animation: glitchBlue 2s infinite 5s linear alternate-reverse;
+  animation: glitchBlue 2s infinite 4s linear alternate-reverse;
 }
 
 
@@ -340,10 +340,10 @@ svg .triangle.white.bottom{
 
 
 .motto.top .content{
-  animation: jerkwhole 2s infinite 3s linear alternate-reverse; position:relative;
+  animation: jerkwhole 2s infinite 2s linear alternate-reverse; position:relative;
 }
 .motto.bottom .content{
-  animation: jerkwhole2 2s infinite 5s linear alternate-reverse; position:relative;
+  animation: jerkwhole2 2s infinite 4s linear alternate-reverse; position:relative;
 }
 
 @media  (max-width:767px){
