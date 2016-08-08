@@ -276,6 +276,36 @@ svg .triangle.white.bottom{
   60% {clip: rect(0px, 0px, 0px, 0px);}
 }
 
+
+
+
+
+@keyframes glitchBlue {
+  20% {clip: rect(0px, 0px, 0px, 0px);}
+  50% {clip: rect(4px, 999px, 149px, 0px);}
+  49% {clip: rect(1px, 999px, 177px, 0px);}
+  48% {clip: rect(67px, 999px, 162px, 0px);}
+  47% {clip: rect(53px, 999px, 130px, 0px);}
+  46% {clip: rect(78px, 999px, 110px, 0px);}
+  45% {clip: rect(88px, 999px, 121px, 0px);}
+  44% {clip: rect(9px, 999px, 158px, 0px);}
+  43% {clip: rect(47px, 999px, 188px, 0px);}
+  42% {clip: rect(86px, 999px, 120px, 0px);}
+  41% {clip: rect(4px, 999px, 14px, 0px);}
+  40% {clip: rect(41px, 999px, 126px, 0px);}
+  39% {clip: rect(78px, 999px, 153px, 0px);}
+  38% {clip: rect(85px, 999px, 166px, 0px);}
+  37% {clip: rect(33px, 999px, 138px, 0px);}
+  36% {clip: rect(39px, 999px, 179px, 0px);}
+  35% {clip: rect(57px, 999px, 130px, 0px);}
+  34% {clip: rect(13px, 999px, 185px, 0px);}
+  33% {clip: rect(23px, 999px, 155px, 0px);}
+  32% {clip: rect(15px, 999px, 144px, 0px);}
+  31% {clip: rect(100px, 999px, 135px, 0px);}
+  30% {clip: rect(52px, 999px, 114px, 0px);}
+  60% {clip: rect(0px, 0px, 0px, 0px);}
+}
+
 .motto h3:before {
   content: attr(data-text);
   position: absolute;
@@ -300,13 +330,21 @@ svg .triangle.white.bottom{
   42% { opacity:0.8; top:0px; left:100px; transform:scale(1,1.2) skew(-80deg,0);}
   43% { opacity:1; top:0; left:0; transform:scale(1,1) skew(0,0);}
 }
+
+@keyframes jerkwhole2 {
+  40% { opacity:1; top:0; left:0;  transform:scale(1,1) skew(0,0);}
+  41% { opacity:0.8; top:0px; left:-100px; transform:scale(1,1.2) skew(-50deg,0);}
+  42% { opacity:0.8; top:0px; left:100px; transform:scale(1,1.2) skew(80deg,0);}
+  43% { opacity:1; top:0; left:0; transform:scale(1,1) skew(0,0);}
+}
+
+
 .motto.top .content{
   animation: jerkwhole 2s infinite 3s linear alternate-reverse; position:relative;
 }
 .motto.bottom .content{
-  animation: jerkwhole 2s infinite 5s linear alternate-reverse; position:relative;
+  animation: jerkwhole2 2s infinite 5s linear alternate-reverse; position:relative;
 }
-
 
 @media  (max-width:767px){
   @-webkit-keyframes zoomOutDown {
