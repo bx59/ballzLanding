@@ -1,5 +1,6 @@
-@font-face { font-family: UniSansHeavy; src: url('assets/font/uni-sans/UniSansHeavy.otf');}
-body { font-family: UniSansHeavy, sans-serif; }
+@font-face { font-family: UniSansHeavy; src: url('assets/font/UniSans/UniSansHeavy.otf');}
+@font-face { font-family: NHaasGroteskDSPro65Md; src: url('assets/font/NHaasGroteskDSPro-65Md/NHaasGroteskDSPro-65Md.woff');}
+body { font-family: NHaasGroteskDSPro65Md, sans-serif; }
 
 #ballz-intro-logo{ width: 100%; height: auto; }
 .intro { font-size: 1.250em; font-style: italic; margin: 0; }
@@ -135,8 +136,8 @@ svg .triangle.white.bottom{
 
 
 
-.motto { position: absolute;text-align: center;left: 50%; }
-.motto h3 {color: black;font-size: 12vmax;margin:0;line-height: 18vmax;}
+.motto { position: absolute;text-align: center;left: 50%; font-family: UniSansHeavy, sans-serif;}
+.motto h3 { color: black;font-size: 12vmax;margin:0;line-height: 18vmax; }
 
 .motto.top {
   top: 50%;
@@ -346,6 +347,23 @@ svg .triangle.white.bottom{
   animation: jerkwhole2 2s infinite 4s linear alternate-reverse; position:relative;
 }
 
+.black { color: #000000; }
+.red { color: #E61717; }
+.brief {
+  position:absolute; bottom:50%; left:50%; margin-left:-34.5vmax; margin-bottom:-30vmax;
+  opacity: 0;
+  -webkit-animation: mottoMoveDown .1s linear 3s forwards;
+  -moz-animation: mottoMoveDown .1s linear 3s forwards;
+  -o-animation: mottoMoveDown .1s linear 3s forwards;
+  animation: mottoMoveDown .1s linear 3s forwards;
+}
+.brief .black { text-align:left; margin:0; }
+
+
+
+@media (min-width:1200px) {
+  .brief { margin-left:-34.5vmax; margin-bottom:-22vmax; }
+}
 @media  (max-width:767px){
   @-webkit-keyframes zoomOutDown {
     20% { -webkit-transform: scale3d(.478, .478, .478) translate3d(0, -60px, 0);}
@@ -383,24 +401,11 @@ svg .triangle.white.bottom{
   .motto h3, .motto h3:after, .motto h3:before { font-size: 9vmax; line-height: 17vmax; }
   .motto.top { margin-left: -26.5vmax; margin-top: -15.8vmax; }
   .motto.bottom { margin-left: -26.5vmax; margin-bottom: -17.3vmax }
+  .brief { margin-left:-26.5vmax; margin-bottom: -35vmax; }
 }
 @media (max-width:480px) {
   .motto h3, .motto h3:after, .motto h3:before { font-size:6vmax; line-height: 13vmax; }
   .motto.top { margin-left:-17.5vmax; margin-top: -12vmax;  }
   .motto.bottom { margin-left:-17.5vmax; margin-bottom: -13.5vmax;  }
-}
-.black { color: #000000; }
-.red { color: #E61717; }
-.brief { position:absolute; bottom:50%; left:50%; margin-bottom:-22vmax; margin-left:-34.5vmax; }
-.brief .black { text-align:left; margin:0; }
-
-
-@media (max-width:1199px) and (min-width: 992px) {
-  .brief { margin-bottom:-30vmax; margin-left:-34.5vmax; }
-}
-@media (max-width:767px) and (min-width: 481px) {
-  .brief { margin-bottom: -35vmax; margin-left:-26.5vmax; }
-}
-@media (max-width:480px) {
-  .brief { margin-bottom:-36vmax; margin-left:-17.5vmax; }
+  .brief { margin-left:-17.5vmax; margin-bottom:-36vmax; }
 }
