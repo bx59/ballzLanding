@@ -53,22 +53,12 @@
   </head>
 
   <body>
-    <script>
-    $(function() {
-  for (i = 0; i < 4; i++) {
-    $('.buzz_wrapper .text span').eq(0).clone().prependTo('.buzz_wrapper .text');
-  }
-  for (i = 0; i < 10; i++) {
-    $('.buzz_wrapper .scanline').eq(0).clone().appendTo('.buzz_wrapper');
-  }
-});
-    </script>
 
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
 
-        <div class="motto top">
+        <div class="motto top glitchTop">
           <div class="content">
             <h3 data-text="URGE TO ACT">URGE TO ACT</h3>
           </div>
@@ -93,7 +83,7 @@
             </g>
         </svg>
 
-        <div class="motto bottom">
+        <div class="motto bottom glitchBottom">
           <div class="content">
             <h3 data-text="DARE TO DO.">DARE TO DO.</h3>
           </div>
@@ -141,5 +131,23 @@
     <script src="dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script>
+$(function(){
+
+      setInterval(function(){
+        $('.glitchTop').removeClass("glitchTop");
+        $('.glitchBottom').removeClass("glitchBottom");
+
+      },8000);
+
+      setInterval(function(){
+        $('.motto.top').addClass("glitchTop");
+        $('.motto.bottom').addClass("glitchBottom");
+      },10000);
+});
+
+
+    </script>
   </body>
 </html>
