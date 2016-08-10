@@ -245,10 +245,10 @@ svg .triangle.white.bottom{
     clip: rect(0px, 0px, 0px, 0px);
 }
 .glitchTop .content h3:after{
-  animation: glitchRed 2s infinite  linear alternate;
+  animation: glitchRed 4s infinite 2.5s linear alternate;
 }
 .glitchBottom .content h3:after{
-  animation: glitchRed 4s infinite 1s linear alternate;
+  animation: glitchRed 6s infinite 3.5s linear alternate;
 }
 
 
@@ -319,10 +319,10 @@ svg .triangle.white.bottom{
   clip: rect(0px, 0px, 0px, 0px);
 }
 .glitchTop .content h3:before{
-  animation: glitchBlue 2s infinite  linear alternate;
+  animation: glitchBlue 4s infinite 2.5s linear alternate;
 }
 .glitchBottom .content h3:before{
-  animation: glitchBlue 4s infinite 1s linear alternate;
+  animation: glitchBlue 6s infinite 3.5s linear alternate;
 }
 
 
@@ -342,10 +342,10 @@ svg .triangle.white.bottom{
 
 
 .glitchTop .content{
-  animation: jerkwhole 2s infinite 2s linear reverse; position:relative;
+  animation: jerkwhole 2s infinite 4.5s linear reverse; position:relative;
 }
 .glitchBottom .content{
-  animation: jerkwhole2 2s infinite 3s linear alternate; position:relative;
+  animation: jerkwhole2 2s infinite 5.5s linear alternate; position:relative;
 }
 
 .black { color: #000000; }
@@ -358,7 +358,7 @@ svg .triangle.white.bottom{
   -o-animation: mottoMoveDown .1s linear 3s forwards;
   animation: mottoMoveDown .1s linear 3s forwards;
 }
-.brief .black { text-align:left; margin:0; }
+.brief h3 { text-align:left; margin:0; }
 .brief .red { font-family: NHaasGroteskDSPro95Blk, sans-serif; }
 
 

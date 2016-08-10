@@ -91,12 +91,13 @@
 
         <div class="brief">
           <div class="row">
-            <div class="col-xs-10 col-lg-12">
-              <h4 class="black">
+
+              <h3>
                 <span class="red">tl;dr_></span>
-                 Ballz is a mobile application that allows you to challenge your friends or anybody you want in return for balls and fun.
-              </h4>
-            </div>
+                <span class="black">Ballz is a mobile application that allows you to challenge your friends or anybody you want in return for balls and fun.</span>
+                <span class="shuffle black"></span>
+              </h3>
+          
           </div>
         </div>
 
@@ -136,18 +137,46 @@
 $(function(){
 
       setInterval(function(){
-        $('.glitchTop').removeClass("glitchTop");
-        $('.glitchBottom').removeClass("glitchBottom");
+        $('.motto.top').removeClass("glitchTop");
+        $('.motto.bottom').removeClass("glitchBottom");
 
       },8000);
 
       setInterval(function(){
         $('.motto.top').addClass("glitchTop");
         $('.motto.bottom').addClass("glitchBottom");
-      },10000);
+      },9000);
+
+
+
+      var inc = 0;
+      var out = 0;
+      var str = $(".black:not(.shuffle)").text();
+      $(".black:not(.shuffle)").text("");
+      var t;
+      var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@$%&€£#ß=-+^";
+
+      setTimeout(function(){
+        t = setInterval(
+          function() {
+            inc++;
+            if ( inc%7 === 0) {
+              if(out < str.length){
+                $('.black:not(.shuffle)').append(str[out]);
+                out++;
+                $('.shuffle').text( chars[Math.floor(Math.random() * chars.length)] );
+              }
+            } else if (out >= str.length) {
+              $('.shuffle').text("");
+              clearInterval(t);
+            }
+          } , 15);
+        // $('.black:not(.shuffle)').text("");
+      },5000);
 });
+</script>
+<script>
 
-
-    </script>
+</script>
   </body>
 </html>
