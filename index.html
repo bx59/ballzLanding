@@ -57,6 +57,18 @@
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
+        <!-- navigation bar start -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">
+                <img alt="Brand" src="assets/img/ballz-logo.svg">
+              </a>
+            </div>
+          </div>
+        </nav>
+        <!-- navigation bar end -->
+
 
         <div class="motto top glitchTop">
           <div class="content">
@@ -90,15 +102,15 @@
         </div>
 
         <div class="brief">
-          <div class="row">
+          <h3>
+            <span class="red">tl;dr_></span>
+            <span class="black">Ballz is a mobile application that allows you to challenge your friends or anybody you want in return for balls and fun.</span>
+            <span class="shuffle black"></span>
+          </h3>
+        </div>
 
-              <h3>
-                <span class="red">tl;dr_></span>
-                <span class="black">Ballz is a mobile application that allows you to challenge your friends or anybody you want in return for balls and fun.</span>
-                <span class="shuffle black"></span>
-              </h3>
-          
-          </div>
+        <div class="triangle">
+              <span class="letter" data-letter="triangle"></span>
         </div>
 
       </div>
@@ -170,13 +182,11 @@ $(function(){
               $('.shuffle').text("");
               clearInterval(t);
             }
-          } , 15);
+          } , 10);
         // $('.black:not(.shuffle)').text("");
       },5000);
 });
 </script>
-<script>
 
-</script>
   </body>
 </html>

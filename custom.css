@@ -135,7 +135,26 @@ svg .triangle.white.bottom{
 }
 /* logo to line animation end */
 
+.navbar {
+  animation: navBarMoveUp .3s linear 5s forwards;
+  border: none;
+  background-color: transparent;
+  margin-bottom:0;
+  min-height: 70px;
+}
+.navbar-brand{
+  height: 70px;
+  padding: 0;
+}
+.navbar-brand>img{
+  max-height: 100%;
+  }
 
+@keyframes navBarMoveUp {
+  0% { opacity: 0; transform:translate3d(0, 323px, 0);}
+  80% { opacity: 0; }
+  100% { opacity: 1; transform: translate3d(0, 0, 0);}
+}
 
 .motto { position: absolute;text-align: center;left: 50%; font-family: UniSansHeavy, sans-serif;}
 .motto h3 { color: black;font-size: 12vmax;margin:0;line-height: 18vmax; }
@@ -351,7 +370,9 @@ svg .triangle.white.bottom{
 .black { color: #000000; }
 .red { color: #E61717; }
 .brief {
-  position:absolute; bottom:50%; left:50%; margin-left:-34.5vmax; margin-bottom:-30vmax;
+  position:absolute; bottom:50%; margin-bottom:-30vmax;
+  /*left:50%; margin-left:-34.5vmax; */
+  left:0; padding-left: 15.25vmax; padding-right: 15.25vmax;
   opacity: 0;
   -webkit-animation: mottoMoveDown .1s linear 3s forwards;
   -moz-animation: mottoMoveDown .1s linear 3s forwards;
@@ -364,7 +385,10 @@ svg .triangle.white.bottom{
 
 
 @media (min-width:1200px) {
-  .brief { margin-left:-34.5vmax; margin-bottom:-22vmax; }
+  .brief {
+    margin-bottom:-22vmax;
+    padding-left: 15.25vmax; padding-right: 15.25vmax;
+  }
 }
 @media  (max-width:767px){
   @-webkit-keyframes zoomOutDown {
@@ -403,11 +427,92 @@ svg .triangle.white.bottom{
   .motto h3, .motto h3:after, .motto h3:before { font-size: 9vmax; line-height: 17vmax; }
   .motto.top { margin-left: -26.5vmax; margin-top: -15.8vmax; }
   .motto.bottom { margin-left: -26.5vmax; margin-bottom: -17.3vmax }
-  .brief { margin-left:-26.5vmax; margin-bottom: -35vmax; }
+  .brief {
+    margin-bottom: -35vmax;
+    padding-left: 11.25vmax; padding-right: 11.25vmax;
+  }
 }
 @media (max-width:480px) {
   .motto h3, .motto h3:after, .motto h3:before { font-size:6vmax; line-height: 13vmax; }
   .motto.top { margin-left:-17.5vmax; margin-top: -12vmax;  }
   .motto.bottom { margin-left:-17.5vmax; margin-bottom: -13.5vmax;  }
-  .brief { margin-left:-17.5vmax; margin-bottom:-36vmax; }
+  .brief {
+    margin-bottom:-36vmax;
+    padding-left: 6.75vmax; padding-right: 6.75vmax;
+  }
 }
+/*hover animation start*/
+/*@import url(http://fonts.googleapis.com/css?family=Lato:900);
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+
+
+.letter {
+
+text-align: bottom center;
+margin-left:-26.5vmax; margin-bottom: -45vmax;
+border-left: 20px solid transparent;
+border-right: 20px solid transparent;
+border-top: 20px solid #00B4F1;
+perspective: 400;
+transform-style: preserve-3d;
+  z-index: 1;
+
+  /*display: inline-block;
+  font-weight: 900;
+  font-size: 8em;
+  margin: 0.2em;
+  position: relative;
+  color: #00B4F1;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+}
+.letter .triangle:before, .letter .triangle:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+.letter .triangle, .letter .triangle:before, .letter .triangle:after{
+  transition: all 0.3s ease-in-out;
+}
+.letter .triangle:before{
+  color: #fff;
+  text-shadow:
+    -1px 0px 1px rgba(0,0,0,.8),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.letter .triangle:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter .triangle:hover:before{
+  color: #fafafa;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+.letter .triangle:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,2 2deg);
+}*/
+/*hover animation end*/
