@@ -3,10 +3,10 @@
 @font-face { font-family: NHaasGroteskDSPro95Blk; src: url('assets/font/NHaasGroteskDSPro-95Blk/NHaasGroteskDSPro-95Blk.woff');}
 body { font-family: NHaasGroteskDSPro65Md, sans-serif; }
 
-#ballz-intro-logo{ width: 100%; height: auto; }
+#ballz-intro-logo{ width: 100%; height: auto;margin-top:-14vmax }
 .intro { font-size: 1.250em; font-style: italic; margin: 0; }
 
-svg {
+svg#ballz-intro-logo {
   display: block; fill: transparent; margin-left: auto; margin-right: auto;
   -webkit-animation: zoomOutDown 0.3s ease-in-out 1.5s forwards; ;
   -moz-animation: zoomOutDown 0.3s ease-in-out 1.5s forwards; ;
@@ -136,7 +136,8 @@ svg .triangle.white.bottom{
 /* logo to line animation end */
 
 .navbar {
-  animation: navBarMoveUp .3s linear 5s forwards;
+  opacity:0;
+  animation: navBarMoveUp .3s linear 5.4s forwards;
   border: none;
   background-color: transparent;
   margin-bottom:0;
@@ -149,6 +150,12 @@ svg .triangle.white.bottom{
 .navbar-brand>img{
   max-height: 100%;
   }
+  .navbar.navbar-default.navbar-pagetop{
+position:absolute; top:50%; margin-top:-24vmax;
+}
+.navbar-pagetop .navbar-brand {
+position:absolute; top:0; left:50%; margin-left:-36vmax !important;
+}
 
 @keyframes navBarMoveUp {
   0% { opacity: 0; transform:translate3d(0, 323px, 0);}
@@ -161,7 +168,7 @@ svg .triangle.white.bottom{
 
 .motto.top {
   top: 50%;
-  margin-top: -16vmax;
+  margin-top: -21vmax;
   margin-left: -35.6vmax;
   opacity: 0;
   -webkit-animation: mottoMoveUp .3s linear 2s forwards;
@@ -173,7 +180,7 @@ svg .triangle.white.bottom{
 }
 .motto.bottom {
   bottom: 50%;
-  margin-bottom: -18.3vmax;
+  margin-bottom: -9.3vmax;
   margin-left:-35.1vmax;
   opacity: 0;
   -webkit-animation: mottoMoveDown .3s linear 2.5s forwards;
@@ -370,7 +377,7 @@ svg .triangle.white.bottom{
 .black { color: #000000; }
 .red { color: #E61717; }
 .brief {
-  position:absolute; bottom:50%; margin-bottom:-30vmax;
+  position:absolute; bottom:50%; margin-bottom:-20vmax;
   /*left:50%; margin-left:-34.5vmax; */
   left:0; padding-left: 15.25vmax; padding-right: 15.25vmax;
   opacity: 0;
@@ -386,7 +393,7 @@ svg .triangle.white.bottom{
 
 @media (min-width:1200px) {
   .brief {
-    margin-bottom:-22vmax;
+    margin-bottom:-12vmax;
     padding-left: 15.25vmax; padding-right: 15.25vmax;
   }
 }
@@ -425,94 +432,27 @@ svg .triangle.white.bottom{
   }
 
   .motto h3, .motto h3:after, .motto h3:before { font-size: 9vmax; line-height: 17vmax; }
-  .motto.top { margin-left: -26.5vmax; margin-top: -15.8vmax; }
-  .motto.bottom { margin-left: -26.5vmax; margin-bottom: -17.3vmax }
+  .motto.top { margin-left: -26.5vmax; margin-top: -20.8vmax; }
+  .motto.bottom { margin-left: -26.5vmax; margin-bottom: -8.3vmax }
   .brief {
-    margin-bottom: -35vmax;
+    margin-bottom: -25vmax;
     padding-left: 11.25vmax; padding-right: 11.25vmax;
+  }
+  .navbar.navbar-default.navbar-pagetop{
+    margin-top: -34vmax;
+
   }
 }
 @media (max-width:480px) {
-  .motto h3, .motto h3:after, .motto h3:before { font-size:6vmax; line-height: 13vmax; }
-  .motto.top { margin-left:-17.5vmax; margin-top: -12vmax;  }
-  .motto.bottom { margin-left:-17.5vmax; margin-bottom: -13.5vmax;  }
+  .motto h3, .motto h3:after, .motto h3:before { font-size:10vmax; line-height: 13vmax; }
+  .motto.top { margin-left:-30.5vmax; margin-top: -19vmax;  }
+  .motto.bottom { margin-left:-30.5vmax; margin-bottom: -6.5vmax;  }
   .brief {
-    margin-bottom:-36vmax;
+    margin-bottom:-31vmax;
     padding-left: 6.75vmax; padding-right: 6.75vmax;
   }
-}
-/*hover animation start*/
-/*@import url(http://fonts.googleapis.com/css?family=Lato:900);
-*, *:before, *:after{
-  box-sizing:border-box;
-}
+  .navbar.navbar-default.navbar-pagetop{
+    margin-top: -34vmax;
 
-
-.letter {
-
-text-align: bottom center;
-margin-left:-26.5vmax; margin-bottom: -45vmax;
-border-left: 20px solid transparent;
-border-right: 20px solid transparent;
-border-top: 20px solid #00B4F1;
-perspective: 400;
-transform-style: preserve-3d;
-  z-index: 1;
-
-  /*display: inline-block;
-  font-weight: 900;
-  font-size: 8em;
-  margin: 0.2em;
-  position: relative;
-  color: #00B4F1;
-  transform-style: preserve-3d;
-  perspective: 400;
-  z-index: 1;
+  }
 }
-.letter .triangle:before, .letter .triangle:after{
-  position:absolute;
-  content: attr(data-letter);
-  transform-origin: top left;
-  top:0;
-  left:0;
-}
-.letter .triangle, .letter .triangle:before, .letter .triangle:after{
-  transition: all 0.3s ease-in-out;
-}
-.letter .triangle:before{
-  color: #fff;
-  text-shadow:
-    -1px 0px 1px rgba(0,0,0,.8),
-    1px 0px 1px rgba(0,0,0,.8);
-  z-index: 3;
-  transform:
-    rotateX(0deg)
-    rotateY(-15deg)
-    rotateZ(0deg);
-}
-.letter .triangle:after{
-  color: rgba(0,0,0,.11);
-  z-index:2;
-  transform:
-    scale(1.08,1)
-    rotateX(0deg)
-    rotateY(0deg)
-    rotateZ(0deg)
-    skew(0deg,1deg);
-}
-.letter .triangle:hover:before{
-  color: #fafafa;
-  transform:
-    rotateX(0deg)
-    rotateY(-40deg)
-    rotateZ(0deg);
-}
-.letter .triangle:hover:after{
-  transform:
-    scale(1.08,1)
-    rotateX(0deg)
-    rotateY(40deg)
-    rotateZ(0deg)
-    skew(0deg,2 2deg);
-}*/
-/*hover animation end*/
