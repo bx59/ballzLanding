@@ -110,8 +110,18 @@
           </h3>
         </div>
 
-    
 
+
+<div class="blood1">
+  <img src="assets/img/combinedshape1.svg" class="splash1"><img src="assets/img/combinedshape2.svg" class="splash2">
+  <div class='drop'></div>
+  </div>
+
+<!-- <div class="how">
+  <img src="assets/img/how.svg">
+</div> -->
+
+</div>
 </div>
 
     <!-- <div class="site-wrapper">
@@ -141,9 +151,22 @@
     <script src="dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+    $(document).ready(function () {
+      $('.check').css('stroke-dashoffset', 0);
+    });
+
+    </script>
 
     <script>
-$(function(){
+    $(function(){
+
+      // setInterval(function(){
+      //   $('.mouse').removeClass("wheel-up-down");
+      // },2000);
+      // setInterval(function(){
+      //   $('.mouse').addClass("wheel-up-down");
+      // },7000);
 
       setInterval(function(){
         $('.motto.top').removeClass("glitchTop");
@@ -157,7 +180,7 @@ $(function(){
       },9000);
 
 
-
+      /* type animation start */
       var inc = 0;
       var out = 0;
       var str = $(".black:not(.shuffle)").text();
@@ -179,10 +202,15 @@ $(function(){
               $('.shuffle').text("");
               clearInterval(t);
             }
-          } , 5);
+          } , 4);
         // $('.black:not(.shuffle)').text("");
-      },4000);
+    },3000);
+    /* type animation end */
+
 });
+
+
+
 </script>
 
   </body>
