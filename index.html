@@ -54,6 +54,14 @@
 
   <body>
 
+    <audio class="audio-glitch hidden" controls loop >
+      <source src="assets/sound/glitch1.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio class="audio-line hidden" controls loop >
+      <source src="assets/sound/lineopen.mp3" type="audio/mpeg">
+      </audio>
+
     <div class="site-wrapper">
 
       <div class="site-wrapper-inner">
@@ -62,7 +70,7 @@
           <div class="container">
             <div class="navbar-header">
               <a class="navbar-brand" href="#">
-                <img alt="Brand" src="assets/img/ballz-logo.svg">
+                <img alt="Brand" src="assets/img/ballz-logo.png">
               </a>
 
           </div>
@@ -112,10 +120,10 @@
 
 
 
-<div class="blood">
+<!-- <div class="blood">
   <img src="assets/img/combinedshape1.svg" class="splash1"><img src="assets/img/combinedshape2.svg" class="splash2">
   <div class='drop'></div>
-  </div>
+  </div> -->
 
 <!-- <div class="how">
   <img src="assets/img/how.svg">
@@ -177,7 +185,61 @@
       setInterval(function(){
         $('.motto.top').addClass("glitchTop");
         $('.motto.bottom').addClass("glitchBottom");
+
       },9000);
+      /* glitch sound timer start*/
+
+      setTimeout(function(){
+        // $('audio').trigger('play');
+
+        var audioCounter = 0;
+        var audioPlayer = function(){
+          // $('audio').loop=true;
+          $('.audio-glitch').trigger('play');
+          audioCounter++;
+          console.log(audioCounter);
+        };
+        audioPlayer();
+        var audioStopper = function(){
+          $('.audio-glitch').trigger('pause');
+          $('.audio-glitch').currentTime=0;
+          if(audioCounter == 5){
+            clearInterval(audioPlayerInterval);
+            clearInterval(audioStopperInterval);
+          }
+        };
+        var audioStopperInterval =  setInterval(audioStopper,8000);
+        var audioPlayerInterval =  setInterval(audioPlayer,9000);
+
+
+    },3200);
+
+      /* glitch sound timer end*/
+  /* line sound timer start*/
+  setTimeout(function(){
+    // $('audio').trigger('play');
+
+    var audioCounterLine = 0;
+    var audioPlayerLine = function(){
+      // $('audio').loop=true;
+      $('.audio-line').trigger('play');
+      audioCounterLine++;
+      console.log(audioCounterLine);
+    };
+    audioPlayerLine();
+    var audioStopperLine = function(){
+      $('.audio-line').trigger('pause');
+      $('.audio-line').currentTime=0;
+      if(audioCounterLine == 1){
+        clearInterval(audioPlayerLineInterval);
+        clearInterval(audioStopperLineInterval);
+      }
+    };
+    var audioStopperLineInterval =  setInterval(audioStopperLine,30000);
+    var audioPlayerLineInterval =  setInterval(audioPlayerLine,31000);
+
+
+},1500);
 
 
       /* type animation start */
@@ -204,7 +266,7 @@
             }
           } , 4);
         // $('.black:not(.shuffle)').text("");
-    },3000);
+    },4000);
     /* type animation end */
 
 });
