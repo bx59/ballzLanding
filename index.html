@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
     <meta name="description" content="">
     <meta name="keywords" content="ballz, challenge, app, dare">
     <meta name="author" content="Ballz">
     <meta name="web_author" content="info@ballz.io">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- <meta name = "viewport" content = "width = 320,initial-scale = 1.3, user-scalable = no"> -->
+    <!-- <meta name="viewport" content="width=device-width"> -->
 
     <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
@@ -18,7 +21,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
@@ -54,15 +57,25 @@
 
   <body>
 
-    <audio class="audio-glitch hidden" controls loop >
-      <source src="assets/sound/glitch1.mp3" type="audio/mpeg">
-    </audio>
+    <!-- <div class="overlay"></div>
+    <div class="scanline"></div> -->
 
-    <audio class="audio-line hidden" controls loop >
-      <source src="assets/sound/lineopen.mp3" type="audio/mpeg">
-      </audio>
+
+
 
     <div class="site-wrapper">
+      <audio class="audio-glitch hidden" controls loop >
+        <source src="assets/sound/glitch1.mp3" type="audio/mpeg">
+      </audio>
+
+      <audio class="audio-line hidden" controls loop >
+        <source src="assets/sound/lineopen.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="banner__cta">
+          <div class="banner__line banner__line--top"></div>
+          <div class="banner__line banner__line--bottom"></div>
+        </div>
 
       <div class="site-wrapper-inner">
         <!-- navigation bar start -->
@@ -79,13 +92,19 @@
         <!-- navigation bar end -->
 
 
-        <div class="motto top glitchTop">
+        <div class="motto top first glitchTop">
           <div class="content">
-            <h3 data-text="URGE TO ACT">URGE TO ACT</h3>
+            <h3 data-text="URGE">URGE</h3>
           </div>
         </div>
 
-        <svg id="ballz-intro-logo" width="872px" height="490px" viewBox="0 0 872 490" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <div class="motto top second glitchTop">
+                  <div class="content">
+                    <h3 data-text="TO ACT">TO ACT</h3>
+                  </div>
+                </div>
+
+        <svg id="ballz-intro-logo" width="872px" height="400px" viewBox="0 0 872 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>Ballz Logo</title>
             <desc></desc>
             <defs></defs>
@@ -104,9 +123,14 @@
             </g>
         </svg>
 
-        <div class="motto bottom glitchBottom">
+        <div class="motto bottom first glitchBottom">
           <div class="content">
-            <h3 data-text="DARE TO DO.">DARE TO DO.</h3>
+            <h3 data-text="DARE">DARE</h3>
+          </div>
+        </div>
+        <div class="motto bottom second glitchBottom">
+          <div class="content">
+            <h3 data-text="TO DO.">TO DO.</h3>
           </div>
         </div>
 
@@ -165,6 +189,9 @@
     });
 
     </script>
+
+
+
 
     <script>
     $(function(){
@@ -274,6 +301,5 @@
 
 
 </script>
-
   </body>
 </html>
